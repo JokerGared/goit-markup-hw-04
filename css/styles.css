@@ -152,12 +152,13 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1-min.jpg);
+    url(../images/people-office.jpg);
   padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-heading {
@@ -278,8 +279,8 @@ img {
 .team-list-item {
   background: #fff;
   width: calc((100% - 72px) / 4);
-  box-shadow: 0 2px 1px 0 rgba(103, 104, 120, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
 }
 
@@ -332,7 +333,7 @@ img {
 
 .team-list-soc-list-link:hover,
 .team-list-soc-list-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .team-list-soc-list-icon {
@@ -409,7 +410,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px 0 32px;
+  padding: 40px 32px;
   top: 0;
   transform: translatey(100%);
   transition-property: transform;
@@ -454,7 +455,7 @@ img {
 
 .footer .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
 .footer-soc-list {
@@ -464,11 +465,20 @@ img {
   gap: 16px;
 }
 
-.footer-soc-heading {
+.footer-soc-text {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.team-list-soc-list-link.footer-soc:hover,
+.team-list-soc-list-link.footer-soc:focus {
+  background-color: #31d0aa;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
